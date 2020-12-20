@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    background: black;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.registration {
+	position: relative;
+}
+
+#register_txt {
+	color: white;
+}
+
+.searchBox {
+    width: 100%;
+    border: 3px solid #40363C;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #0D0D0D;
+}
+
+.search {
+    width: 30%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 25%;
+    z-index: 10;
+}
+
+.page {
+    background: url(https://img.uxfree.com/wp-content/uploads/2018/02/extreme-close-up-of-film-projector-with-reels-spinning-and-projecting-a-movie-in-background-in-4k-1024x576.jpg) no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    padding: 0 30px 0 30px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Oswald", sans;
+    font-weight: normal;
+    line-height: 3.5rem;
+}
+
+.header h2 {
+    font-size: 1.35rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-family: "Oswald", sans;
+}
+
+#replace {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+#problem {
+    padding: 0 30px 0 30px;
+    position: absolute;
+    top: 28%;
+}
+
+#problem_text {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-family: "Oswald", sans;
+}
+
+#results {
+    position: relative;
+    top: 30px;
+    display: block;
+    width: 800px;
+    height: 450px;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
+}
+
+#results:hover {
+    transform: scale(1.02);
+    transition: all 0.4s;
+    box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.5);
+}
+
+#info_section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+}
+
+#movie_header {
+    position: relative;
+    padding: 25px;
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+
+#movie_header h1 {
+    color: #fff;
+    font-weight: 400;
+}
+
+#movie_header h4 {
+    color: #9ac7fa;
+    font-weight: 400;
+}
+
+.minutes {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.type {
+    display: inline-block;
+    color: #cee4fd;
+    margin-left: 10px;
+}
+
+.rating {
+    position: relative;
+    top: 5px;
+    color: #fff;
+    font-size: 80%;
+}
+
+.poster {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    height: 120px;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    margin-top: 10px;
+}
+
+#movie_header .text {
+    color: #cfd6e1;
+}
+
+#movie_other {
+    padding: 25px;
+    height: 100%;
+    float: left;
+    width: 40%;
+    color: #fff;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.blur_back {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    right: 0;
+    background-size: 10% 10%;
+    border-radius: 11px;
+    /* background: url("https://filmdaily.co/wp-content/uploads/2020/01/projector-lede-1300x772.jpg");*/
+    background-position: center;
+}
+
+@media screen and (min-width: 850px) {
+    #movie_header {
+        width: 60%;
+    }
+    #movie_desc {
+        width: 50%;
+    }
+    .blur_back {
+        width: 80%;
+        background-position: -100% 10%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #results {
+        width: 95%;
+        margin: 70px auto;
+        height: auto;
+    }
+    .blur_back {
+        width: 100%;
+        background-position: 50% 50%;
+    }
+    #movie_header {
+        width: 100%;
+    }
+    #movie_desc {
+        width: 100%;
+    }
+    #movie_other {
+        width: 100%;
+        overflow-y: visible;
+    }
+    #info_section {
+        display: inline-grid;
+    }
+    #replace {
+        top: 65%;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .search {
+        margin-top: 10%;
+    }
+    #replace {
+        top: 75%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #replace {
+        top: 90%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .search {
+        margin-top: 25%;
+    }
+    #replace {
+        top: 105%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
