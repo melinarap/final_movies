@@ -6,4 +6,4 @@ public interface WriterDAO {
 
     public void saveWriter(Writer theWriter);
 
-}  
+}    

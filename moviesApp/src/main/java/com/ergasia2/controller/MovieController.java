@@ -24,3 +24,4 @@ import com.ergasia2.service.UserService;
 	        return "redirect:/index.jsp";
 	    }
 }
+  

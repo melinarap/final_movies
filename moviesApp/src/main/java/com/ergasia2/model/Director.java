@@ -21,7 +21,7 @@ public class Director {
 	
 	@Column(name = "surname")
 	String surname;
-	  
+	    
 
 
 	public int getMovieId() {
