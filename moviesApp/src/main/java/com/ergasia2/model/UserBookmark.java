@@ -22,3 +22,4 @@ public class UserBookmark {
 	@Column(name = "UserUsername")
 	String username;
 }
+  

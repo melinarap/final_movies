@@ -25,7 +25,7 @@ public class Writer {
 	public int getWriterId() {
 		return writerId;
 	}
-
+  
 	public void setWriterId(int writerId) {
 		this.writerId = writerId;
 	}

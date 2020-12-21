@@ -11,7 +11,7 @@ public class Director {
 	
 	@Id
 	@Column(name = "directorId")
-	int directorId;
+	int directorId;  
 	
 	@Column(name = "movieId")
 	int movieId;
@@ -21,7 +21,7 @@ public class Director {
 	
 	@Column(name = "surname")
 	String surname;
-	
+	  
 
 
 	public int getMovieId() {

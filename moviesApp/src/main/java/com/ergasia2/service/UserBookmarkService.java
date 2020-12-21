@@ -7,3 +7,4 @@ public interface UserBookmarkService {
     public void saveUserBookmark(UserBookmark theUserBookmark);
 
 }
+  
